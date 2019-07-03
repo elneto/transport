@@ -305,6 +305,10 @@ header.navbar-default {
     }
 }
 
+input#search {
+    width: 160px;
+}
+
 #block-un-search-0 {
     @media (min-width: $screen-sm-min) {
         // Mobile styles
