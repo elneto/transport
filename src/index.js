@@ -9,18 +9,20 @@ var $ = require('jquery');
 
 function headerSmall () {
 	sdgkplogo.className = 'sdgkplogo_small';
+	$('.confName').removeClass('confName').addClass('confName_small');
 	$('button.navbar-toggler').addClass('mt-3').removeClass('mt-5');
 	$('form#search-form').addClass('mt-3').removeClass('mt-5');
 };
 
 function headerNormal () {
 	sdgkplogo.className = 'sdgkplogo_normal';
+	$('.confName_small').removeClass('confName_small').addClass('confName');
 	$('button.navbar-toggler').addClass('mt-5').removeClass('mt-3');
 	$('form#search-form').addClass('mt-5').removeClass('mt-3');
 };
 
 function resizeHeader () {
-	if ($('body').scrollTop() > 35 || $(window).width() < 576) {
+	if ($('body').scrollTop() > 35 || $(window).width() < 992) {
 		headerSmall();
 	} else {
 		headerNormal();

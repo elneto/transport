@@ -116,7 +116,36 @@
 }
 
 img#confLogo {
-    margin: 2em 0;
+    float: left;
+    margin: 2em 0.8em 2em 0;
+    padding-right: 0.8em;
+    border-right: 1px solid black;
+}
+
+$conf-name: 28px;
+
+div#confName1 {
+    margin-top: 0.8em;
+}
+
+div#confName2 {
+    margin-top: -0.5em;
+}
+
+.confName {
+    color: $gray-dark-70-percent;
+    font-size: $conf-name;
+    font-weight: 500;
+    margin-left: 0.7em;
+
+    &:hover {
+        text-decoration: none !important;
+    }
+
+    &_small {
+        @extend .confName;
+        font-size: $conf-name*2/3 !important;
+    }
 }
 
 input.form-control {
@@ -124,13 +153,15 @@ input.form-control {
     background-color: $gray-lighter;
 }
 
+$logo-height: 60px;
+
 .sdgkplogo_normal {
-    height: 60px !important;
+    height: $logo-height !important;
 }
 
 .sdgkplogo_small {
-    height: 40px !important;
-    margin: 1em 0 !important;
+    height: $logo-height*2/3 !important;
+    margin-top: 1em !important;
 }
 
 #stickymenu {
