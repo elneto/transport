@@ -102,15 +102,16 @@ img#sdgwheel2 {
 %desa_stairs_base {
     position: absolute;
     background-size: contain;
-    background-image: url('https://sustainabledevelopment.un.org/content/images/desa_stairs.png');
+    background-image: url('images/desa_stairs_solid.png');
     background-repeat: no-repeat;
     z-index: 999;
+    opacity: 0.5;
 }
 
 .desa_stairs_big {
     @extend %desa_stairs_base;
     right: 0;
-    bottom: 0;
+    bottom: -2.9em;
     height: 70%;
     width: 30%;
 }
