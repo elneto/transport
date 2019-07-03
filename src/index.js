@@ -1,8 +1,10 @@
 import 'bootstrap';
 import './style.scss';
 import cover from './images/transport1.png';
+import confLogo from './images/conflogo.png';
 document.getElementById('cover').src = cover;
-var sdgkplogo = document.getElementById('sdgsummitLogo');
+document.getElementById('confLogo').src = confLogo;
+var sdgkplogo = document.getElementById('confLogo');
 var $ = require('jquery');
 
 function headerSmall () {
