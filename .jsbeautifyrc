@@ -1,0 +1,9 @@
+{
+	"js": {
+		"space-before-function-paren": ["error", "always"],
+		"end_with_newline": true,
+		"jslint_happy": true,
+		"space_after_named_function": true,
+		"indent_with_tabs": true
+	}
+}
