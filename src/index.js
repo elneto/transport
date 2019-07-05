@@ -2,8 +2,10 @@ import 'bootstrap';
 import './style.scss';
 import cover from './images/transport1.png';
 import confLogo from './images/conflogo.png';
+import slide2 from './images/rodrigo-abreu-lq9PxpwDZUk-unsplash.jpg';
 document.getElementById('cover').src = cover;
 document.getElementById('confLogo').src = confLogo;
+document.getElementById('slide2').src = slide2;
 var sdgkplogo = document.getElementById('confLogo');
 var $ = require('jquery');
 
