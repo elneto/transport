@@ -175,14 +175,18 @@ blockquote.wquote-text:after {
     color: white;
 }
 
-#cover-title {
-    font-size: $font-size-base*1.2;
-    font-weight: 600;
-    line-height: 1.2;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    width: 52.5%;
+h1.cover-title {
+    font-size: $font-size-base*3;
+}
+
+.cover-title {
+    color: white;
+    background-color: #134a6c;
+    padding: .1em 0.4em;
+    opacity: .85;
+    text-align: start;
+    width: fit-content;
+    margin-left: -100px;
 }
 
 #cover-subtitle {
