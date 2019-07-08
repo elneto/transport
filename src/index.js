@@ -10,9 +10,7 @@ import imgProgramme from './images/programme.jpg';
 import imgOutcomes from './images/outcomes.jpg';
 import imgDocs from './images/docs.jpg';
 import imgInfo from './images/info.jpg';
-import imgSide from './images/side.jpg';
 import imgMedia from './images/media.jpg';
-import imgAdvocates from './images/advocates.jpg';
 
 document.getElementById('cover').src = cover;
 document.getElementById('confLogo').src = confLogo;
@@ -24,9 +22,7 @@ document.getElementById('imgProgramme').src = imgProgramme;
 document.getElementById('imgOutcomes').src = imgOutcomes;
 document.getElementById('imgDocs').src = imgDocs;
 document.getElementById('imgInfo').src = imgInfo;
-document.getElementById('imgSide').src = imgSide;
 document.getElementById('imgMedia').src = imgMedia;
-document.getElementById('imgAdvocates').src = imgAdvocates;
 
 var sdgkplogo = document.getElementById('confLogo');
 var $ = require('jquery');
