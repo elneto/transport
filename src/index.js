@@ -4,26 +4,22 @@ import cover from './images/transport1.png';
 import confLogo from './images/conflogo.png';
 import slide2 from './images/rodrigo-abreu-lq9PxpwDZUk-unsplash.jpg';
 import slide3 from './images/david-marcu-Op5JMbkOqi0-unsplash.jpg';
-
 import imgAbout from './images/about.jpg';
 import imgProgramme from './images/programme.jpg';
 import imgOutcomes from './images/outcomes.jpg';
 import imgDocs from './images/docs.jpg';
 import imgInfo from './images/info.jpg';
 import imgMedia from './images/media.jpg';
-
 document.getElementById('cover').src = cover;
 document.getElementById('confLogo').src = confLogo;
 document.getElementById('slide2').src = slide2;
 document.getElementById('slide3').src = slide3;
-
 document.getElementById('imgAbout').src = imgAbout;
 document.getElementById('imgProgramme').src = imgProgramme;
 document.getElementById('imgOutcomes').src = imgOutcomes;
 document.getElementById('imgDocs').src = imgDocs;
 document.getElementById('imgInfo').src = imgInfo;
 document.getElementById('imgMedia').src = imgMedia;
-
 var sdgkplogo = document.getElementById('confLogo');
 var $ = require('jquery');
 
@@ -61,7 +57,7 @@ $(document).scroll(function () {
 $(window).resize(function () {
 	resizeHeader();
 });
-var menuItems = ['home', 'about', 'programme', 'documentation', 'registration', 'media'];
+var menuItems = ['home', 'about', 'programme', 'documentation', 'registration', 'media', 'otherevents'];
 menuItems.forEach(function (item) {
 	$('a[href="#' + item + '"]').on('click', function (e) {
 		e.preventDefault();
