@@ -61,7 +61,7 @@ $(document).scroll(function () {
 $(window).resize(function () {
 	resizeHeader();
 });
-var menuItems = ['home', 'about', 'programme', 'outcomes', 'documentation', 'registration', 'media'];
+var menuItems = ['home', 'about', 'programme', 'documentation', 'registration', 'media'];
 menuItems.forEach(function (item) {
 	$('a[href="#' + item + '"]').on('click', function (e) {
 		e.preventDefault();
