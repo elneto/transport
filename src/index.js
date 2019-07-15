@@ -57,7 +57,7 @@ $(document).scroll(function () {
 $(window).resize(function () {
 	resizeHeader();
 });
-var menuItems = ['home', 'about', 'programme', 'documentation', 'registration', 'media', 'otherevents'];
+var menuItems = ['home', 'about', 'programme', 'documentation', 'registration', 'media', 'otherevents', 'commitments'];
 menuItems.forEach(function (item) {
 	$('a[href="#' + item + '"]').on('click', function (e) {
 		e.preventDefault();
