@@ -1,14 +1,20 @@
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-     /* IE10+ CSS styles go here */
-     #stickymenu {
-    position: relative !important;
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+
+    /* IE10+ CSS styles go here */
+    #stickymenu {
+        position: relative !important;
     }
 
-    // .sdgbig{
-    //     height: 376px !important;
-    // }
+    .cover-title {
+        display: table;
+    }
 }
 
 @supports (-ms-accelerator:true) {
-  /* IE Edge 12+ CSS styles go here */
+
+    /* IE Edge 12+ CSS styles go here */
+    .cover-title {
+        display: table;
+    }
 }
