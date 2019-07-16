@@ -358,4 +358,18 @@ section#intro {
 
 section#icons-nav {
     @extend %pady3;
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    h4 {
+        margin-top: 1em;
+        color: $gray-dark-70-percent;
+    }
+
+    .fas,
+    .far {
+        color: $gray-dark-70-percent;
+    }
 }

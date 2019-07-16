@@ -4,12 +4,12 @@ import cover from './images/transport1.png';
 import confLogo from './images/conflogo.png';
 import slide2 from './images/rodrigo-abreu-lq9PxpwDZUk-unsplash.jpg';
 import slide3 from './images/david-marcu-Op5JMbkOqi0-unsplash.jpg';
-
+import tram from './images/tramluiz-felipe-dRNT_zPMZ6k-unsplash.jpg';
 document.getElementById('cover').src = cover;
 document.getElementById('confLogo').src = confLogo;
 document.getElementById('slide2').src = slide2;
 document.getElementById('slide3').src = slide3;
-
+document.getElementById('tram').src = tram;
 var sdgkplogo = document.getElementById('confLogo');
 var $ = require('jquery');
 
