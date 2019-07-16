@@ -153,12 +153,6 @@ button#btn-hpsearch {
     }
 }
 
-.fa-user {
-    font-size: 1.4em;
-    color: $blue;
-    cursor: pointer;
-}
-
 a.list-group-item.list-group-item-action {
     color: $blue-dark-3;
 }
@@ -351,4 +345,10 @@ div#sdg17,
 
 table.table * {
     font-size: 14px;
+}
+
+.icons-nav {
+    h4 {
+        text-align: center;
+    }
 }
