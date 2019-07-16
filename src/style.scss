@@ -347,8 +347,15 @@ table.table * {
     font-size: 14px;
 }
 
-.icons-nav {
-    h4 {
-        text-align: center;
-    }
+%pady3 {
+    padding: 3em 0;
+}
+
+section#intro {
+    @extend %pady3;
+    background-color: $gray-light-3;
+}
+
+section#icons-nav {
+    @extend %pady3;
 }
