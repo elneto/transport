@@ -153,6 +153,30 @@ div.confName2 {
     }
 }
 
+.confDate {
+    color: $gray-dark-70-percent;
+}
+
+.confDate1 {
+    margin-top: 2em;
+    font-size: 18px;
+
+    &_small {
+        @extend .confDate1;
+        font-size: 18px*2/3 !important;
+    }
+}
+
+.confDate2 {
+    font-size: 20px;
+    margin-top: -0.5em;
+
+    &_small {
+        @extend .confDate2;
+        font-size: 20px*2/3 !important;
+    }
+}
+
 input.form-control {
     border-radius: 0;
     background-color: $gray-lighter;
