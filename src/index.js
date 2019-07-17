@@ -1,22 +1,26 @@
 import 'bootstrap';
 import './style.scss';
 import confLogo from './images/conflogo.png';
+import wheelImg from './images/sdgwheel.png';
 import slide1 from './images/access-annie-spratt-wtk4VH8EU20-unsplash.jpg';
 import slide2 from './images/safe-madalina-z-5xe-nuJ0GFw-unsplash.jpg';
 import slide3 from './images/eff-chuttersnap-eqwFWHfQipg-unsplash.jpg';
 import slide4 from './images/green-matt-henry-1nVbppFJl-s-unsplash.jpg';
 import tram from './images/tramluiz-felipe-dRNT_zPMZ6k-unsplash.jpg';
 document.getElementById('confLogo').src = confLogo;
+document.getElementById('wheel').src = wheelImg;
 document.getElementById('slide1').src = slide1;
 document.getElementById('slide2').src = slide2;
 document.getElementById('slide3').src = slide3;
 document.getElementById('slide4').src = slide4;
 document.getElementById('tram').src = tram;
 var sdgkplogo = document.getElementById('confLogo');
+var wheel = document.getElementById('wheel');
 var $ = require('jquery');
 
 function headerSmall () {
 	sdgkplogo.className = 'sdgkplogo_small';
+	wheel.className = 'sdgkplogo_small';
 	$('.confName').removeClass('confName').addClass('confName_small');
 	$('button.navbar-toggler').addClass('mt-3').removeClass('mt-5');
 	$('form#search-form').addClass('mt-3').removeClass('mt-5');
@@ -24,6 +28,7 @@ function headerSmall () {
 
 function headerNormal () {
 	sdgkplogo.className = 'sdgkplogo_normal';
+	wheel.className = 'sdgkplogo_normal';
 	$('.confName_small').removeClass('confName_small').addClass('confName');
 	$('button.navbar-toggler').addClass('mt-5').removeClass('mt-3');
 	$('form#search-form').addClass('mt-5').removeClass('mt-3');

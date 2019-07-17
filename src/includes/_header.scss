@@ -16,7 +16,6 @@
 }
 
 #navbarSupportedContent {
-
     input.form-control {
         width: 10em;
         border-top-right-radius: 0;
@@ -122,6 +121,12 @@ img#confLogo {
     border-right: 1px solid black;
 }
 
+img#wheel {
+    float: right;
+    margin: 2em 0 2em 0.8em;
+    padding-left: 0.8em;
+}
+
 $conf-name: 28px;
 
 div.confName1 {
@@ -169,7 +174,6 @@ $logo-height: 60px;
 }
 
 // Masthead
-
 .navbar {
     padding: 0;
 }
