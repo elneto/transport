@@ -3,12 +3,10 @@
 // is a good place for page scaffolding elements and properties like width, height,
 // margin, and padding.
 ////////////////////////
-
 // @media (max-width: $screen-xs-min){
 //
 //
 // }
-
 //small
 @media (max-width: $screen-xs-max) {
     .pull-xs-left {
@@ -59,7 +57,16 @@
     .pull-md-right {
         float: right;
     }
+}
 
+@media (max-width: $screen-md-min) {
+    p.cover-title {
+        font-size: 1.4em;
+    }
+
+    p.cover-title.topofimg {
+        left: 7em;
+    }
 }
 
 @media (min-width: $screen-md-min) {
@@ -78,5 +85,4 @@
     .pull-lg-right {
         float: right;
     }
-
 }
