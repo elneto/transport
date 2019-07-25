@@ -41,6 +41,36 @@ a {
     margin-bottom: 2em;
 }
 
+div#bannerAbout {
+    background-image: url('./images/zhang-kaiyv-lHEIht7Xf6c-unsplash.jpg');
+    background-position-y: 100%;
+}
+
+div#bannerProgramme {
+    background-image: url('./images/zhang-kaiyv-lHEIht7Xf6c-unsplash.jpg');
+    background-position-y: 62%;
+}
+
+div#bannerDocs {
+    background-image: url('./images/city-street-1246870_1280.jpg');
+    background-position-y: 62%;
+}
+
+div#bannerReg {
+    background-image: url('./images/train-388253_1280.jpg');
+    background-position-y: 62%;
+}
+
+div#bannerOther {
+    background-image: url('./images/david-marcu-Op5JMbkOqi0-unsplash.jpg');
+    background-position-y: 84%;
+}
+
+div#bannerMedia {
+    background-image: url('./images/roman-kraft-_Zua2hyvTBk-unsplash.jpg');
+    background-position-y: 50%;
+}
+
 section#home-video {
     // background: url('./images/sdgwheel.png') no-repeat $blue-background;
     background: no-repeat $blue-background;
