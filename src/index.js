@@ -1,6 +1,6 @@
 import 'bootstrap';
 import './style.scss';
-import confLogo from './images/conflogo.png';
+import confLogo from './images/UNLogo2.png';
 import wheelImg from './images/sdgwheel.png';
 import slide1 from './images/access-annie-spratt-wtk4VH8EU20-unsplash.jpg';
 import slide2 from './images/safe-madalina-z-5xe-nuJ0GFw-unsplash.jpg';
