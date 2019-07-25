@@ -149,7 +149,7 @@ div.confName2 {
 
     &_small {
         @extend .confName;
-        font-size: $conf-name*2/3 !important;
+        font-size: $conf-name*0.58 !important;
     }
 }
 
