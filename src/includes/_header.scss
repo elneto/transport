@@ -38,6 +38,15 @@
     }
 }
 
+.naviSelected {
+    background-color: $gray-lighter !important;
+    border-right: 1px solid black !important;
+
+    a.nav-link {
+        color: black !important;
+    }
+}
+
 .dropdown-menu {
     margin-top: 0;
     background-color: $gray-lighter;

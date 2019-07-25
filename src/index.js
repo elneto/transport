@@ -45,18 +45,23 @@ function resizeHeader () {
 		headerNormal();
 	}
 }
+
+function navigateHash () {
+	var url = window.location.href.toString();
+	if (url.match('#')) {
+		let clicked = $('#' + url.split('#')[1] + '-tab');
+		clicked.tab('show');
+		$('li.nav-item').removeClass('naviSelected');
+		clicked.hasClass('nav-link') ? clicked.parent().addClass('naviSelected') : clicked.parent().parent().addClass('naviSelected');
+	}
+}
 $(document).ready(function () {
 	resizeHeader();
-	var url = window.location.href.toString();
-	if (url.match('#')) {
-		$('#' + url.split('#')[1] + '-tab').tab('show');
-	}
+	navigateHash();
 });
+// for the back and fwd buttons
 window.onhashchange = function () {
-	var url = window.location.href.toString();
-	if (url.match('#')) {
-		$('#' + url.split('#')[1] + '-tab').tab('show');
-	}
+	navigateHash();
 };
 $(document).scroll(function () {
 	resizeHeader();
@@ -64,6 +69,7 @@ $(document).scroll(function () {
 $(window).resize(function () {
 	resizeHeader();
 });
+// to add a hashtag when clicking a nav link
 var menuItems = ['home', 'about', 'programme', 'documentation', 'registration', 'media', 'otherevents', 'commitments'];
 menuItems.forEach(function (item) {
 	$('a[href="#' + item + '"]').on('click', function (e) {
