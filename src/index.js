@@ -52,14 +52,12 @@ $(document).ready(function () {
 		$('#' + url.split('#')[1] + '-tab').tab('show');
 	}
 });
-
 window.onhashchange = function () {
 	var url = window.location.href.toString();
 	if (url.match('#')) {
 		$('#' + url.split('#')[1] + '-tab').tab('show');
 	}
-}
-
+};
 $(document).scroll(function () {
 	resizeHeader();
 });
