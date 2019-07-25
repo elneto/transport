@@ -52,6 +52,14 @@ $(document).ready(function () {
 		$('#' + url.split('#')[1] + '-tab').tab('show');
 	}
 });
+
+window.onhashchange = function () {
+	var url = window.location.href.toString();
+	if (url.match('#')) {
+		$('#' + url.split('#')[1] + '-tab').tab('show');
+	}
+}
+
 $(document).scroll(function () {
 	resizeHeader();
 });
@@ -61,7 +69,7 @@ $(window).resize(function () {
 var menuItems = ['home', 'about', 'programme', 'documentation', 'registration', 'media', 'otherevents', 'commitments'];
 menuItems.forEach(function (item) {
 	$('a[href="#' + item + '"]').on('click', function (e) {
-		e.preventDefault();
+		// e.preventDefault();
 		$('#' + item + '-tab').tab('show');
 		window.location.href = '#' + item;
 	});
