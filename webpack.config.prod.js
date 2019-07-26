@@ -3,6 +3,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const ImageminPlugin = require("imagemin-webpack");
 module.exports = {
   optimization: {
     splitChunks: {
@@ -16,28 +17,6 @@ module.exports = {
       }
     }
   },
-  plugins: [
-    new CleanWebpackPlugin('dist', {}),
-    new MiniCssExtractPlugin({
-      // Options similar to the same options in webpackOptions.output
-      // both options are optional
-      filename: "[name].[chunkhash].css",
-      chunkFilename: "[id].css"
-    }),
-    new HtmlWebpackPlugin({
-      inject: false,
-      hash: true,
-      template: './src/index.html',
-      filename: 'index.html'
-      // minify: {
-      //   collapseWhitespace: true,
-      //   removeComments: true,
-      //   removeRedundantAttributes: true,
-      //   removeScriptTypeAttributes: true,
-      //   removeStyleLinkTypeAttributes: true
-      // }
-    })
-  ],
   entry: {
     main: './src/index.js'
   },
@@ -93,7 +72,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|jpg|gif)$/,
+        test: /\.(jpe?g|png|gif)$/,
         use: [{
           loader: 'file-loader',
           options: {
@@ -101,7 +80,7 @@ module.exports = {
             outputPath: 'images/',
             publicPath: 'images/'
           }
-        }]
+        }],
       },
       {
         test: /\.svg/,
@@ -115,5 +94,57 @@ module.exports = {
         loader: 'imports?jQuery=jquery,$=jquery,this=>window'
       }
     ]
-  }
+  },
+  plugins: [
+  	new CleanWebpackPlugin('dist', {}),
+  	new MiniCssExtractPlugin({
+  		// Options similar to the same options in webpackOptions.output
+  		// both options are optional
+  		filename: "[name].[chunkhash].css",
+  		chunkFilename: "[id].css"
+  	}),
+  	new HtmlWebpackPlugin({
+  		inject: false,
+  		hash: true,
+  		template: './src/index.html',
+  		filename: 'index.html'
+  		// minify: {
+  		//   collapseWhitespace: true,
+  		//   removeComments: true,
+  		//   removeRedundantAttributes: true,
+  		//   removeScriptTypeAttributes: true,
+  		//   removeStyleLinkTypeAttributes: true
+  		// }
+    }),
+    // Make sure that the plugin is after any plugins that add images, example `CopyWebpackPlugin`
+    new ImageminPlugin({
+    	bail: false, // Ignore errors on corrupted images
+    	cache: true,
+    	imageminOptions: {
+    		// Before using imagemin plugins make sure you have added them in `package.json` (`devDependencies`) and installed them
+
+    		// Lossless optimization with custom option
+    		// Feel free to experiment with options for better result for you
+    		plugins: [
+    			["gifsicle", {
+    				interlaced: true
+    			}],
+    			["jpegtran", {
+    				progressive: true
+    			}],
+    			["optipng", {
+    				optimizationLevel: 5
+    			}],
+    			[
+    				"svgo",
+    				{
+    					plugins: [{
+    						removeViewBox: false
+    					}]
+    				}
+    			]
+    		]
+    	}
+    })
+  ]
 };
