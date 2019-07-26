@@ -3,6 +3,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 const ImageminPlugin = require("imagemin-webpack");
 module.exports = {
   optimization: {
@@ -116,6 +117,10 @@ module.exports = {
   		//   removeStyleLinkTypeAttributes: true
   		// }
     }),
+    new CopyPlugin([{
+    	from: 'src/images/**/**',
+    	to: path.resolve(__dirname, 'dist')
+    }]),
     // Make sure that the plugin is after any plugins that add images, example `CopyWebpackPlugin`
     new ImageminPlugin({
     	bail: false, // Ignore errors on corrupted images
