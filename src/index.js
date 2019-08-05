@@ -14,12 +14,11 @@ document.getElementById('slide2').src = slide2;
 document.getElementById('slide3').src = slide3;
 document.getElementById('slide4').src = slide4;
 document.getElementById('tram').src = tram;
-var sdgkplogo = document.getElementById('confLogo');
 var wheel = document.getElementById('wheel');
 var $ = require('jquery');
 
 function headerSmall () {
-	sdgkplogo.className = 'sdgkplogo_small';
+	$('#confLogo').removeClass('sdgkplogo_normal').addClass('sdgkplogo_small');
 	wheel.className = 'wheel_small';
 	$('.confName').removeClass('confName').addClass('confName_small');
 	$('.confDate1').removeClass('confDate1').addClass('confDate1_small');
@@ -29,7 +28,7 @@ function headerSmall () {
 };
 
 function headerNormal () {
-	sdgkplogo.className = 'sdgkplogo_normal';
+	$('#confLogo').removeClass('sdgkplogo_small').addClass('sdgkplogo_normal');
 	wheel.className = 'wheel_normal';
 	$('.confName_small').removeClass('confName_small').addClass('confName');
 	$('.confDate1_small').removeClass('confDate1_small').addClass('confDate1');

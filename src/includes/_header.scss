@@ -197,12 +197,12 @@ $logo-width: 210px;
 
 .sdgkplogo_normal {
     height: $logo-height !important;
-    width: $logo-width;
+    width: $logo-width !important;
 }
 
 .sdgkplogo_small {
     height: $logo-height*2/3 !important;
-    width: $logo-width*2/3;
+    width: $logo-width*2/3 !important;
     margin-top: 1em !important;
 }
 
