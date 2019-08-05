@@ -1,6 +1,6 @@
 import 'bootstrap';
 import './style.scss';
-import confLogo from './images/UNLogo2.png';
+import confLogo from './images/masthead-en.svg';
 import wheelImg from './images/sdgwheel.png';
 import slide1 from './images/access-annie-spratt-wtk4VH8EU20-unsplash.jpg';
 import slide2 from './images/safe-madalina-z-5xe-nuJ0GFw-unsplash.jpg';
@@ -20,7 +20,7 @@ var $ = require('jquery');
 
 function headerSmall () {
 	sdgkplogo.className = 'sdgkplogo_small';
-	wheel.className = 'sdgkplogo_small';
+	wheel.className = 'wheel_small';
 	$('.confName').removeClass('confName').addClass('confName_small');
 	$('.confDate1').removeClass('confDate1').addClass('confDate1_small');
 	$('.confDate2').removeClass('confDate2').addClass('confDate2_small');
@@ -30,7 +30,7 @@ function headerSmall () {
 
 function headerNormal () {
 	sdgkplogo.className = 'sdgkplogo_normal';
-	wheel.className = 'sdgkplogo_normal';
+	wheel.className = 'wheel_normal';
 	$('.confName_small').removeClass('confName_small').addClass('confName');
 	$('.confDate1_small').removeClass('confDate1_small').addClass('confDate1');
 	$('.confDate2_small').removeClass('confDate2_small').addClass('confDate2');
