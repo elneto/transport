@@ -1,5 +1,6 @@
 import 'bootstrap';
 import './style.scss';
+import mobileUNLogo from './images/UNLogo2.png';
 import confLogo from './images/masthead-en.svg';
 import wheelImg from './images/sdgwheel.png';
 import slide1 from './images/access-annie-spratt-wtk4VH8EU20-unsplash.jpg';
@@ -7,6 +8,7 @@ import slide2 from './images/safe-madalina-z-5xe-nuJ0GFw-unsplash.jpg';
 import slide3 from './images/eff-chuttersnap-eqwFWHfQipg-unsplash.jpg';
 import slide4 from './images/electric-car.jpg';
 import tram from './images/tramluiz-felipe-dRNT_zPMZ6k-unsplash.jpg';
+document.getElementById('mobileUNLogo').src = mobileUNLogo;
 document.getElementById('confLogo').src = confLogo;
 document.getElementById('wheel').src = wheelImg;
 document.getElementById('slide1').src = slide1;
