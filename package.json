@@ -4,6 +4,7 @@
 	"main": "index.js",
 	"scripts": {
 		"build": "webpack --mode production --env=prod",
+		"buildun": "webpack --mode production --env=produn",
 		"dev": "webpack --mode development --env=dev",
 		"start": "webpack-dev-server --mode development --env=dev --watch --open chrome"
 	},
